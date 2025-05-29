@@ -30,9 +30,35 @@ The **Boutique POS** system is designed to help boutique store owners streamline
 ```bash
 git clone https://github.com/Joanlangat11/Boutique_POS.git
 cd Boutique_POS
+### 2. Install dependencies
 # If Node.js
 npm install
 
 # If Python
 pip install -r requirements.txt
+### 3. Set up your environment variables
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+### 4. Start the server
+npm run dev
+
+🗂️ Project Structure
+Boutique_POS/
+├── controllers/        # Route logic
+├── models/             # MongoDB models
+├── routes/             # API routes
+├── middleware/         # Auth and error handling
+├── public/             # Static files (optional)
+├── .env                # Environment variables
+├── server.js           # App entry point
+└── package.json
+📊 Example APIs
+POST /api/products - Add product
+
+GET /api/products - List all products
+
+POST /api/sales - Record sale
+
+POST /api/auth/login - User login
 
