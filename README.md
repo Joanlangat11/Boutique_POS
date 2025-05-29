@@ -30,3 +30,9 @@ The **Boutique POS** system is designed to help boutique store owners streamline
 ```bash
 git clone https://github.com/Joanlangat11/Boutique_POS.git
 cd Boutique_POS
+# If Node.js
+npm install
+
+# If Python
+pip install -r requirements.txt
+
